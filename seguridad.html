@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normativas y Certificaciones | Wirefix</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --border: #334155;
+      --accent: #f97316;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: #090d16; border-bottom: 1px solid var(--border); padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; }
+    .brand { font-size: 1.4rem; font-weight: 800; color: var(--text); text-decoration: none; }
+    .brand span { color: var(--accent); }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    nav a:hover, nav a.active { color: var(--accent); }
+    .container { max-width: 900px; margin: 3rem auto; padding: 0 1.5rem; }
+    h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 1.5rem; }
+    .norm-box { background: var(--card); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 4px; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .norm-box h3 { color: var(--text); font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .norm-box p { color: var(--text-muted); font-size: 0.95rem; }
+    footer { border-top: 1px solid var(--border); padding: 3rem 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">WIRE<span>FIX</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="infraestructura.html">Infraestructura</a></li>
+        <li><a href="seguridad.html" class="active">Normativas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Cumplimiento de Estándares Internacionales</h1>
+    <p style="color: var(--text-muted); margin-bottom: 2.5rem;">Todas las instalaciones de Wirefix se ejecutan bajo estrictos lineamientos técnicos internacionales para garantizar compatibilidad universal y vida útil extendida.</p>
+
+    <div class="norm-box">
+      <h3>ANSI/TIA-568-D</h3>
+      <p>Estándar general de cableado de telecomunicaciones en edificios comerciales. Regula distancias máximas, tipos de conductores, radios de curvatura y esquemas de terminación T568A / T568B.</p>
+    </div>
+
+    <div class="norm-box">
+      <h3>ANSI/TIA-606-B (Etiquetado y Administración)</h3>
+      <p>Identificación alfanumérica unificada en cada extremo del cable, puertos de patch panels, placas de pared (faceplates) y canalizaciones para reducir el tiempo de localización de averías.</p>
+    </div>
+
+    <div class="norm-box">
+      <h3>ISO/IEC 11801</h3>
+      <p>Norma internacional para sistemas de cableado genérico en instalaciones de usuarios. Asegura interoperabilidad con hardware de telefonía IP, cámaras de seguridad y terminales de datos.</p>
+    </div>
+
+    <div class="norm-box">
+      <h3>TIA-607-B (Puesta a Tierra y Aterrizaje)</h3>
+      <p>Conexión equipotencial de todos los racks y blindajes de cables a barras maestras de puesta a tierra (TMGB) para salvaguardar conmutadores PBX frente a descargas electrostáticas.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Wirefix Operations. Estándares y aseguramiento técnico de calidad.</p>
+  </footer>
+</body>
+</html>
